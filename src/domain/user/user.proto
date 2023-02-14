@@ -1,0 +1,15 @@
+syntax = "proto3";
+package user;
+
+message WelcomeUserRequest {
+  string name = 1;
+}
+
+
+message WelcomeUserResponse {
+  string greet = 1;
+}
+
+service UserService {
+  rpc GreetUser (WelcomeUserRequest) returns (WelcomeUserResponse);
+}

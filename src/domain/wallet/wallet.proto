@@ -1,0 +1,16 @@
+syntax = "proto3";
+package wallet;
+
+message CreateWalletRequest {
+  string userId = 1;
+}
+
+
+message CreateWalletResponse {
+  string address = 1;
+  string publicKey = 2;
+}
+
+service WalletService {
+  rpc CreateWallet (CreateWalletRequest) returns (CreateWalletResponse);
+}
