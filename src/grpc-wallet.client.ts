@@ -7,8 +7,8 @@ export const grpcClientOptions: ClientOptions = {
     url: 'localhost:50051',
     package: ['wallet', 'user'],
     protoPath: [
-      join(__dirname, 'domain/wallet/wallet.proto'),
-      join(__dirname, 'domain/user/user.proto'),
+      join(__dirname, 'domain/wallet/proto/wallet.proto'),
+      join(__dirname, 'domain/user/proto/user.proto'),
     ],
   },
 };

@@ -1,4 +1,4 @@
-import { Controller, Get, OnModuleInit } from '@nestjs/common';
+import { Controller, Get, OnModuleInit, Post } from '@nestjs/common';
 import { ClientGrpc, Client } from '@nestjs/microservices';
 import { grpcClientOptions } from 'grpc-wallet.client';
 import { UserService } from './interface/user.interface';
